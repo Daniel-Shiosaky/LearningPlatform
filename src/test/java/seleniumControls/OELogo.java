@@ -2,8 +2,9 @@ package seleniumControls;
 
 import org.openqa.selenium.By;
 
-public class Checkbox extends Control {
-    public Checkbox(By myLocator)
+public class OELogo extends Control
+{
+    public OELogo(By myLocator)
     {
 
         super(myLocator);
