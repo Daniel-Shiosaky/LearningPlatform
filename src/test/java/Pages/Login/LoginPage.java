@@ -18,6 +18,6 @@ public class LoginPage {
         loginButton = new Button(By.id("login-submit"));
         rememberCheckbox = new Checkbox(By.id("login-remember"));
         resetPasswordLink = new Link(By.id(""));
-        BienvenidoLabel = new Label(By.xpath("//div[@id='login-holder']/lp2-login-page/lp2-login-box//h1[.='Bienvenido']"));
+        BienvenidoLabel = new Label(By.xpath("//div[@id='login-holder']/lp2-login-page/lp2-login-box//h1[text()='Welcome' or text()='Bienvenido']"));
     }
 }
