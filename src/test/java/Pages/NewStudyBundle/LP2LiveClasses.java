@@ -1,4 +1,4 @@
 package Pages.NewStudyBundle;
 
-public class DailyNews {
+public class LP2LiveClasses {
 }

@@ -1,4 +1,4 @@
 package Pages.NewStudyBundle;
 
-public class CommonExpresions {
+public class LP2DailyNews {
 }

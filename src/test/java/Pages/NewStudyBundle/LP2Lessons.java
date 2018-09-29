@@ -1,4 +1,4 @@
 package Pages.NewStudyBundle;
 
-public class LiveClasses {
+public class LP2Lessons {
 }
