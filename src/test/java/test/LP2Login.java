@@ -41,9 +41,33 @@ public class LP2Login extends BaseTestCase {
         //check title after login
         Assert.assertEquals(StudyBundlePage.TitleBarLabel.getTextValue(),"plan de estudio");
         System.out.println("succesfully logged in, Plan De Estudio Title bar is displayed");
+    }
 
+    @Test (dataProvider="inValidLoginData",dataProviderClass = DataProviderClass.class)
+    public void invalidLogin(String iUsername, String iPassword) throws InterruptedException {
 
+        // check that welcome Label is visible
+        System.out.println("check that Welcome Label is visible");
+        Assert.assertEquals(LP2LoginPage.BienvenidoLabel.getTextValue(),"Welcome");
+        System.out.println("Welcome Label is present");
 
-
+        //click User name
+        System.out.println("click User name");
+        LP2LoginPage.userTextBox.Click();
+        // type invalid user name
+        System.out.println("type invalid user name");
+        LP2LoginPage.userTextBox.Set(iUsername);
+        // click Password
+        System.out.println("click Password");
+        LP2LoginPage.pwdTextBox.Click();
+        // Type invalid Password
+        System.out.println("type invalid Password");
+        LP2LoginPage.pwdTextBox.Set(iPassword);
+        // click Login button
+        System.out.println("click Login button");
+        LP2LoginPage.loginButton.Click();
+        //check title after login
+        Assert.assertEquals(LP2LoginPage.InvalidEmailValidator.getTextValue(),"The email you entered is not recognized. Please try again.");
+        System.out.println("invalid email validator displayed");
     }
 }

@@ -9,9 +9,12 @@ public class LP2LoginPage {
     public Button loginButton;
     public Checkbox rememberCheckbox;
     public Link resetPasswordLink;
-    public Link registerLink;
-    public Link retirnToLoginLink;
+    public Link loginSignupLink;
+    public Link returnToLoginLink;
     public Label BienvenidoLabel;
+    public Label InvalidEmailValidator;
+    public Label InvalidPasswordlValidator;
+    public Link ResetPasswordSignupLink;
 
     public LP2LoginPage() {
 
@@ -21,5 +24,11 @@ public class LP2LoginPage {
         rememberCheckbox = new Checkbox(By.id("login-remember"));
         resetPasswordLink = new Link(By.xpath("//div[@id='login-holder']/lp2-login-page/lp2-login-box/div[@class='box']//a[@href='/recovery.html']"));
         BienvenidoLabel = new Label(By.xpath("//div[@id='login-holder']/lp2-login-page/lp2-login-box//h1[text()='Welcome' or text()='Bienvenido']"));
+        InvalidEmailValidator=new Label(By.xpath("//div[@id='login-holder']/lp2-login-page/lp2-login-box//form//small[@class='form-text error']"));
+        InvalidPasswordlValidator =new Label(By.xpath("//div[@id='login-holder']/lp2-login-page/lp2-login-box//form//small[@class='form-text error']"));
+        loginSignupLink=new Link(By.xpath("//div[@id='login-holder']/lp2-login-page/lp2-login-box/div[@class='box']//a[@href='http://www.openenglish.com/es/']"));
+
+
+
     }
 }

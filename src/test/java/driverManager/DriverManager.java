@@ -20,9 +20,13 @@ public class DriverManager {
     private DriverManager() {
         myDriver = FactoryBrowser.make("chrome").create();
         myDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
     }
     public void closeBrowser(){
         myDriver.close();
+
+    }
+    public void quitDriver(){
         myDriver.quit();
     }
 }
