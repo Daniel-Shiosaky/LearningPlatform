@@ -6,10 +6,10 @@ public class DataProviderClass {
     public static Object[][] getValidLoginDataprovider(){
         return new Object[][] {
                 //STG
-                //{ "daniel.oeauto+1@mailinator.com", "Test123" }
+                { "daniel.oeauto+1@mailinator.com", "Test123" }
 
                 //PROD
-                { "shiosaky@gmail.com", "Test123" }
+                //{ "shiosaky@gmail.com", "Test123" }
 
         };
     }

@@ -1,5 +1,6 @@
 package Pages.NavBar;
 
+import org.openqa.selenium.By;
 import seleniumControls.Icon;
 import seleniumControls.Label;
 import seleniumControls.MenuOption;
@@ -29,7 +30,11 @@ public class LP2NavBar {
     public MenuOption SignOutMenuOption;
 
 
+    public LP2NavBar(){
 
+        userProfileIcon = new Icon(By.xpath("//a[@id='nav-account']/img[@src='/profile/image/123/123']"));
+        SignOutMenuOption = new MenuOption(By.xpath("//a[@id='nav-logout']"));
+    }
 
 
 
